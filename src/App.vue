@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <logo-header></logo-header>
+    <home-page></home-page>
   </div>
 </template>
 
 <script>
-import LogoHeader from './components/logo-header.vue';
+import HomePage from './components/home-page.vue';
 
 export default {
   name: 'app',
@@ -15,11 +15,8 @@ export default {
     }
   },
   components: {
-    LogoHeader,
+    'home-page': HomePage,
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
+<style src="../src/style.scss" lang="scss"></style>
