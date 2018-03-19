@@ -1,3 +1,86 @@
 body {
-    // background: red;
+    h3.heading {
+        color: #ee6e73;
+    }
+    h6 {
+        font-size: 1rem;
+        line-height: 110%;
+        margin: 0.5rem 0 0.4rem 0;
+    }
+    .description {
+        font-size: 1.3em;
+    }
+    .smallText {
+        font-size: 1.3em;
+        font-style: italic;
+        color: #bababa;
+    }
+    .itemBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            .itemBox {
+                flex-direction: row;
+            }
+        }
+
+        .item a {
+            color: #000;
+        }
+
+        .icon {
+            padding: 4em;
+            border: 5px solid #80cbc4;
+            border-radius: 50%;
+            margin: 1em 4em;
+            display: inline-block;
+        }
+    }
+    .collapsible {
+        border: none;
+        margin: 0;
+    }
+    /*jquery ui tab*/
+    .ui-tabs {
+        &.ui-widget.ui-widget-content{
+            border: none;
+        }
+        .ui-widget-header{
+            border: none;
+            background: transparent;
+            overflow-x:auto;
+            overflow-y:hidden;
+            display: flex;
+            display: -webkit-flex;  
+
+            .ui-state-default, 
+            .ui-widget-content .ui-state-default, 
+            .ui-widget-header .ui-state-default, 
+            .ui-button, 
+            .ui-button.ui-state-disabled:hover, 
+            .ui-button.ui-state-disabled:active {
+                border: none;
+                background: transparent;
+                font-weight: bold;
+                font-size: 16px;
+                outline-color: transparent;
+            }
+
+            &.ui-tabs-nav .ui-tabs-anchor{
+                border-bottom: 2px solid transparent;
+                color: #ee6e73;
+                transition: all 0.4s ease;
+            }
+
+            &.ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, 
+            &.ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+            &.ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{
+                border-bottom: 2px solid #ee6e73;
+                opacity: 0.6;
+            }
+        }
+    }
 }

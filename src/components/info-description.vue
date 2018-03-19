@@ -1,12 +1,15 @@
 <template>
-<div data-component="info-description" class="info-description">
-    <h3>{{heading}}</h3>
+<div data-component="info-description" class="info-description" :id="blockId">
+    <h3 class="heading">{{heading}}</h3>
     <div v-html="pageContent"></div>
 </div>
 </template>
 <script>
 export default {
   props: {
+      blockId: {
+          type: String,
+      },
       heading: {
           type: String,
       },
@@ -17,9 +20,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-h3 {
-    color: #ee6e73;
-}
+
 </style>
 
 

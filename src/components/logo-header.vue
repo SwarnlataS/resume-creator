@@ -35,6 +35,7 @@
     justify-content: center;
     flex-direction: column; 
     position: relative;
+    z-index: 3;
 
     @media only screen and (min-width: 768px){
 		  height: 50vh;
@@ -65,7 +66,6 @@
         position: fixed;
         top: 15px;
         right: 15px;
-        z-index: 1000;
     }
 }
 </style>
