@@ -39,4 +39,14 @@ $(document).ready(function(){
   $('.tab-nav').click(function () {
       $tabs.tabs("option", "active", $(this).attr("rel"));
   });
+
+  $('.bxslider').bxSlider({
+    minSlides: 1,
+    maxSlides: 4,
+    slideWidth: 300,
+    slideMargin: 20,
+    auto: true,
+    hideControlOnEnd: true,
+    pager: false,
+  });
 });

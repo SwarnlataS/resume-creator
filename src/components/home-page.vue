@@ -33,6 +33,7 @@
             If you do not hear back, do not get discouraged; it is typical in current practices to not be given notice of your rejection. 
             Don't give up!</p>
         </div>
+        <layout-slider></layout-slider>
         <feedback id="feedback"></feedback>
       </div>
   </div>
@@ -45,6 +46,7 @@ import {indexDescription} from '../constants/index-page-details.js'
 import {tipsForResume, resumeSelection, mistakesToAvoid} from '../constants/index-page-details.js'
 import Feedback from '../components/feedback.vue'
 import Accordian from '../components/accordian.vue'
+import LayoutSlider from '../components/layout-slider.vue'
 
 export default {
   data() {
@@ -61,6 +63,7 @@ export default {
     'info-description': infoDescription,
     'feedback': Feedback,
     'accordian' : Accordian,
+    'layout-slider': LayoutSlider,
   }
 }
 </script>

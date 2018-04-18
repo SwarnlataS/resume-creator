@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-  	<div class="row" id="tabs">
+  	<div class="row" id="tabs" >
     <div class="col s12">
       <ul>
         <li><a class="active" href="#personalInfo">Personal Details</a></li>
